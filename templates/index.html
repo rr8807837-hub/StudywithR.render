@@ -12,26 +12,26 @@ STUDYwithR
 <section>
     <h2>SEM-IV-------BSC(hons) CSCS</h2>
 <div class="links" style="font-size:30px; " >
-    <div class="card"><a href="/cloudcomputing.html" >Virtualization and Cloud computing</a></div>
-    <div class="card"><a href="/itinfra.html">IT Infrastructure Management</a></div>
-    <div class="card"><a href="/process.html">Process Management</a></div>
-    <div class="card"><a href="/eda.html">Exploratory Data Analysis</a></div>
-    <div class="card"><a href="/mongo.html">Mongo DB</a></div>
-    <div class="card"><a href="/account.html">Principles Of Accounting</a></div>
-    <div class="card"><a href="/english.html">Communication Skills for Employability-I</a></div>
-    <div class="card"><a href="/english1.html" >Communication Skills for Employability-II</a></div>
+    <div class="card"><a href="{{ url_for('cloudcomputing') }}" >Virtualization and Cloud computing</a></div>
+    <div class="card"><a href="{{ url_for('itinfra') }}">IT Infrastructure Management</a></div>
+    <div class="card"><a href="{{ url_for('process') }}">Process Management</a></div>
+    <div class="card"><a href="{{ url_for('eda') }}">Exploratory Data Analysis</a></div>
+    <div class="card"><a href="{{ url_for('mongo') }}">Mongo DB</a></div>
+    <div class="card"><a href="{{ url_for('account') }}">Principles Of Accounting</a></div>
+    <div class="card"><a href="{{ url_for('english') }}">Communication Skills for Employability-I</a></div>
+    <div class="card"><a href="{{ url_for('english1') }}" >Communication Skills for Employability-II</a></div>
 </div>
 </section>
 <hr>
 <div style="text-align:center; margin-bottom:00px; ">
-<img src="images\giphy.gif"></div>
+<img src="{{ url_for('static', filename='images/giphy.gif') }}"></div>
 <p style="font-size:24px;">Note: If you are opening this website on a mobile phone, PDF files may download automatically instead of opening in the browser.</p>
 <hr>
 <p style="font-size:24px;">Tip: Switch to Desktop Mode for the best experience,You can enable it from your browser settings.</p>    
 <hr>
 <p style="font-size:24px;">If you have any suggestions or feedback, please feel free to share it with us by clicking the button below:</p>
 <div style="text-align:center; margin-bottom:00px; ">
-    <a href="/review.html">
+    <a href="{{ url_for('index') }}">
         <button style="background-color: green; color: white; padding: 10px 20px; border: none; cursor: pointer;">Provide Feedback</button>
     </a>
 </div>
