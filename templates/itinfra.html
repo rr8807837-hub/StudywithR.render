@@ -7,21 +7,22 @@
 
 <hr>
 <h2 style="font-size:28px; background-color:#333333; color:white;" >Syllabus</h2>
-<img src="static/IT infra/it syllabus.png">
+<img src="{{ url_for('static', filename='IT infra/it syllabus.png') }}">
+
   <h2 style="font-size:28px; background-color:#333333; color:white;" >Materials</h2>
 <section>
 <div class="links" style="font-size:24px;">
-  <div class="card"><a href="static/IT infra/unit-1.pdf">unit 1(IT)</a></div>
-  <div class="card"><a href="static/IT infra/unit-2.pdf">unit 2(IT)</a></div>
-  <div class="card"><a href="static/IT infra/IT UNIT-3.docx.pdf">unit 3(IT)</a></div>
-  <div class="card"><a href="static/IT infra/It unit 4.pdf">unit 4(IT)</a></div>
-  <div class="card"><a href="static/IT infra/It unit 5.pdf">unit 5(IT)</a></div>
+  <div class="card"><a href="{{ url_for('static', filename='IT infra/unit-1.pdf') }}">unit 1(IT)</a></div>
+  <div class="card"><a href="{{ url_for('static', filename='IT infra/unit-2.pdf') }}">unit 2(IT)</a></div>
+  <div class="card"><a href="{{ url_for('static', filename='IT infra/IT UNIT-3.docx.pdf') }}">unit 3(IT)</a></div>
+  <div class="card"><a href="{{ url_for('static', filename='IT infra/It unit 4.pdf') }}">unit 4(IT)</a></div>
+  <div class="card"><a href="{{ url_for('static', filename='IT infra/It unit 5.pdf') }}">unit 5(IT)</a></div>
 </div>
 </section>
+
 <hr>
 <div style="font-size:30px; text-align:center;">
-
-<a href="/index.html">HOME PAGE</a></div>
+<a href="{{ url_for('index') }}">HOME PAGE</a></div>
   </body>
 <style>
 .body{
