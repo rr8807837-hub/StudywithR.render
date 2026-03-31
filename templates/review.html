@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Study with R Review</title>
+    </head>
+    <body class="body">
+        <h1>StudywithR Review</h1>
+        <div class="div">
+            <form method="POST" action="/save">
+            <legend>Name:</legend>
+            <input type="text" name="text" placeholder="Enter your name"><hr>
+            <legend>Feedback:</legend>
+            <textarea name="review" placeholder="What should I:
+                                                 • Remove?
+                                                 • Improve?
+                                                 • Add next?
+                                                 • Fix immediately?" rows="10" ></textarea><hr>
+            <legend>Rate your experience:</legend>
+
+            <input type="radio" name="rating" value="1"> 1<br>
+            <input type="radio" name="rating" value="2"> 2<br>
+            <input type="radio" name="rating" value="3"> 3<br>
+            <input type="radio" name="rating" value="4"> 4<br>
+            <input type="radio" name="rating" value="5"> 5<br>
+            <button type="submit" style="background-color: green; color: white; padding: 10px 20px; border: none; cursor: pointer; margin-top: 10px;">Submit</button>
+            </form>
+            </div>
+<p id="output">{{ msg }}</p>            
+    </body>
+<style>
+.div{
+    border: solid;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    background-color: #cffafe;
+    }
+.body{
+background: radial-gradient(circle at 50% 50%, #ff9de2, #c084fc, #67e8f9, #86efac);
+   background-size: 600% 600%;
+    animation:bg 6s ease infinite; 
+}   
+@keyframes bg{
+    0%{background-position: 0% 100%}
+    100%{background-position: 100% 0%}
+}    
+</style>    
+</html>
